@@ -395,7 +395,30 @@ html, body {
 body {
     background-image: none !important;
 }
-</style><link href="shared-header.css" rel="stylesheet"/><link href="portfolio-hierarchy.css" rel="stylesheet"/></head>
+</style><link href="shared-header.css" rel="stylesheet"/><link href="portfolio-hierarchy.css" rel="stylesheet"/><link rel="stylesheet" href="windows98-font-unified.css">
+<link rel="stylesheet" href="desktop-unified.css"/>
+
+<style id="archive-window-actual-structure-fix">
+/* Match the real DOM: .page > main > section.window */
+body > .page > main > section.window { padding:0 !important; background:#fff !important; border:3px outset #fff !important; overflow:hidden !important; }
+body > .page > main > section.window > .window-title { margin:0 !important; width:100% !important; background:#000080 !important; background-image:none !important; }
+body > .page > main > section.window > .window-content { margin:0 !important; border:0 !important; width:100% !important; max-width:100% !important; box-shadow:none !important; padding:20px 22px !important; background:#fff !important; overflow-wrap:anywhere !important; }
+body > .page > main > section.window .file-grid {min-width:0 !important;max-width:100% !important;}
+@media(max-width:600px){body > .page > main > section.window > .window-content{padding:14px !important;}}
+</style><style id="archive-window-layout-2026">
+/* 2026-11-18 — archive window layout: remove the grey mat, not the white document. */
+body > .page { background:transparent !important; border:0 !important; box-shadow:none !important; padding:0 !important; }
+body > .page > main { display:block !important; width:100% !important; padding:0 !important; margin:0 !important; background:transparent !important; }
+body > .page > main > .window,
+body > .page > main > .two-col .window { background:#fff !important; padding:0 !important; border:2px solid !important; border-color:#fff #404040 #404040 #fff !important; box-shadow:2px 2px 0 #000 !important; overflow:hidden !important; }
+body > .page > main .window > .window-title { margin:0 !important; width:100% !important; border:0 !important; background:#000080 !important; color:#fff !important; }
+body > .page > main .window > .window-content { width:100% !important; max-width:100% !important; margin:0 !important; border:0 !important; box-shadow:none !important; padding:clamp(16px,2.2vw,26px) !important; background:#fff !important; }
+body > .page > main .window .file-grid { min-width:0 !important; max-width:100% !important; }
+body > .page > main .window .file-grid > * { min-width:0 !important; }
+@media(max-width:680px){body > .page > main .window > .window-content {padding:14px !important;}}
+</style><link rel="stylesheet" href="portfolio-alignment-fix.css">
+<link rel="stylesheet" href="portfolio-unified-final.css"/>
+</head>
 <body><script src="shared-header.js"></script>
 <div class="page">
 <main>
@@ -540,8 +563,21 @@ body {
 </div>
 </div>
 <div class="window-content">
-<h2>RESEARCH INTERESTS</h2>
-<p>My current interests focus on retinal circuit function, vision restoration and how electrophysiological measurements can help evaluate functional responses to therapeutic interventions. I would like to develop expertise in human retinal disease models, including retinal organoids, while building on my experience with ex vivo retinal recordings.</p>
+<h2>
+        WHERE I WANT TO GO NEXT
+       </h2>
+<p>
+        I am interested in using advanced biological models
+            to study disease mechanisms and investigate
+            potential therapeutic approaches.
+       </p>
+<p>
+        In particular, I would like to explore brain
+            organoids, organ-on-chip systems and other
+            complex in vitro models, combining functional
+            electrophysiology with molecular and cellular
+            characterization.
+       </p>
 <div class="note">
         My experience with organoids and organ-on-chip
             systems is an area I want to develop, rather

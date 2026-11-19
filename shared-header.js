@@ -4,7 +4,7 @@ const siteHeader = `<div id="global-site-header">
   <header class="universal-site-header">
     <div class="universal-site-identity">
       <h1>ANY RODRIGUES</h1>
-      <p>molecular bioengineer / retinal electrophysiology / translational neuroscience</p>
+      <p>molecular bioengineer / retinal electrophysiology / disease modelling</p>
     </div>
     <div class="universal-status">
       <strong>STATUS:</strong>
@@ -12,10 +12,12 @@ const siteHeader = `<div id="global-site-header">
     </div>
   </header>
   <nav class="universal-site-nav" aria-label="Main navigation">
+    <a href="index.html">HOME</a>
+    <a href="index.html">ABOUT</a>
     <a href="research.html">RESEARCH</a>
     <a href="projects.html">PROJECTS</a>
-    <a href="Any_Rodrigues_CV.pdf" target="_blank" rel="noopener">↓ CV</a>
-    <a href="mailto:anycgrodrigues@gmail.com">✉ CONTACT</a>
+    <a href="Any_Rodrigues_CV.pdf" target="_blank" rel="noopener">CV</a>
+    <a href="mailto:anycgrodrigues@gmail.com">CONTACT</a>
   </nav>
 </div>`;
 document.currentScript.insertAdjacentHTML("beforebegin", siteHeader);

@@ -393,7 +393,30 @@ html, body {
 body {
     background-image: none !important;
 }
-</style><link href="shared-header.css" rel="stylesheet"/><link href="portfolio-hierarchy.css" rel="stylesheet"/></head>
+</style><link href="shared-header.css" rel="stylesheet"/><link href="portfolio-hierarchy.css" rel="stylesheet"/><link rel="stylesheet" href="windows98-font-unified.css">
+<link rel="stylesheet" href="desktop-unified.css"/>
+
+<style id="archive-window-actual-structure-fix">
+/* Match the real DOM: .page > main > section.window */
+body > .page > main > section.window { padding:0 !important; background:#fff !important; border:3px outset #fff !important; overflow:hidden !important; }
+body > .page > main > section.window > .window-title { margin:0 !important; width:100% !important; background:#000080 !important; background-image:none !important; }
+body > .page > main > section.window > .window-content { margin:0 !important; border:0 !important; width:100% !important; max-width:100% !important; box-shadow:none !important; padding:20px 22px !important; background:#fff !important; overflow-wrap:anywhere !important; }
+body > .page > main > section.window .file-grid {min-width:0 !important;max-width:100% !important;}
+@media(max-width:600px){body > .page > main > section.window > .window-content{padding:14px !important;}}
+</style><style id="archive-window-layout-2026">
+/* 2026-11-18 — archive window layout: remove the grey mat, not the white document. */
+body > .page { background:transparent !important; border:0 !important; box-shadow:none !important; padding:0 !important; }
+body > .page > main { display:block !important; width:100% !important; padding:0 !important; margin:0 !important; background:transparent !important; }
+body > .page > main > .window,
+body > .page > main > .two-col .window { background:#fff !important; padding:0 !important; border:2px solid !important; border-color:#fff #404040 #404040 #fff !important; box-shadow:2px 2px 0 #000 !important; overflow:hidden !important; }
+body > .page > main .window > .window-title { margin:0 !important; width:100% !important; border:0 !important; background:#000080 !important; color:#fff !important; }
+body > .page > main .window > .window-content { width:100% !important; max-width:100% !important; margin:0 !important; border:0 !important; box-shadow:none !important; padding:clamp(16px,2.2vw,26px) !important; background:#fff !important; }
+body > .page > main .window .file-grid { min-width:0 !important; max-width:100% !important; }
+body > .page > main .window .file-grid > * { min-width:0 !important; }
+@media(max-width:680px){body > .page > main .window > .window-content {padding:14px !important;}}
+</style><link rel="stylesheet" href="portfolio-alignment-fix.css">
+<link rel="stylesheet" href="portfolio-unified-final.css"/>
+</head>
 <body><script src="shared-header.js"></script>
 <div class="page">
 <main><section class="window">
@@ -401,18 +424,20 @@ body {
 <div class="window-content">
 <p class="meta">C:\ANY_RODRIGUES\PROJECTS\</p>
 <h2>PROJECT ARCHIVE</h2>
-<p>Independent research concepts and proposed experimental frameworks.</p>
-<p>These are proposed projects, distinct from my completed research at CRTD and DZNE.</p>
+<p>Independent research concepts exploring electrophysiology, retinal electrophysiology, and human disease models.</p>
+<p>These are proposed projects in development, not completed biological experiments.</p>
 <hr class="divider"/>
 <p class="label">SELECT A PROJECT FOLDER:</p>
 <div class="file-grid">
-<a class="file" href="neurodose.html"><span aria-hidden="true" class="icon">📁</span><strong>NEURODOSE</strong><small>Proposed closed-loop neural assay / HD-MEA / pharmacology</small><p>Could living neural networks transform preclinical drug testing? A conceptual framework for studying functional adaptation and treatment responses in disease models.</p><span class="open-folder">OPEN PROJECT →</span></a>
-</div></div><div class="statusline">independent concepts | proposed research</div></section>
+<a class="file" href="neurodose.html"><span aria-hidden="true" class="icon">📁</span><strong>NEURODOSE</strong><small>Dravet syndrome / electrophysiology / pharmacology</small><p>A proposed framework to investigate whether treatment modifies learning-related network function in human neural models.</p><span class="open-folder">OPEN FOLDER →</span></a>
+
+
+</div></div><div class="statusline">3 objects | independent research | concept stage</div></section>
 <section class="two-col">
-<div class="window"><div class="window-title"><span>📄 project_notes.txt</span><div aria-hidden="true" class="window-buttons"><span>×</span></div></div><div class="window-content"><h2>ABOUT THE WORK</h2><p>NeuroDose is an independent research proposal, not a completed laboratory study. Its experimental framework and suggested analyses remain to be tested.</p><p>For completed research experience, visit the Research section.</p></div></div>
-<div class="window"><div class="window-title"><span>💾 project_status.ini</span><div aria-hidden="true" class="window-buttons"><span>×</span></div></div><div class="window-content"><h2>PROJECT STATUS</h2><p class="label">NEURODOSE</p><p>Conceptual research project — proposed, not experimentally validated.</p></div></div>
+<div class="window"><div class="window-title"><span>📄 project_notes.txt</span><div aria-hidden="true" class="window-buttons"><span>×</span></div></div><div class="window-content"><h2>ABOUT THESE PROJECTS</h2><p>These pages document research questions, possible experiments, and the evidence needed to test them.</p><p>Any simulations or future plans should be clearly distinguished from experimental results.</p></div></div>
+<div class="window"><div class="window-title"><span>💾 project_status.ini</span><div aria-hidden="true" class="window-buttons"><span>×</span></div></div><div class="window-content"><h2>CURRENT STATUS</h2><p class="label">NEURODOSE</p><p>Hypothetical research proposal.</p><p class="label">NEUROTOUCH</p><p>Concept and computational planning.</p><p class="label">NEURAL INTERFACES</p><p>Proposed research work plan; no experimental results.</p></div></div>
 </section>
-<section aria-label="Project terminal" class="terminal"><p>&gt; opening project archive...</p><p>&gt; NEURODOSE .......... proposal</p><p>&gt; _</p></section></main>
+<section aria-label="Project terminal" class="terminal"><p>&gt; opening project archive...</p><p>&gt; NEURODOSE .......... found</p><p>&gt; NEUROTOUCH ......... found</p><p>&gt; NEURAL INTERFACES .. found</p><p>&gt; _</p></section></main>
 <footer>© 2026 Any Rodrigues | project_archive | just curiosity.</footer>
 </div>
 </body>
