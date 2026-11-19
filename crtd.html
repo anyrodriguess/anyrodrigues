@@ -65,10 +65,13 @@ body {
 <link rel="stylesheet" href="portfolio-alignment-fix.css">
 <link rel="stylesheet" href="portfolio-unified-final.css"/>
 <style>
-/* Figure 6: show the complete source image, without cropping */
-.crtd-figure6-full {max-width:100% !important; overflow:visible !important;}
-.crtd-figure6-full img {display:block !important; width:100% !important; max-width:100% !important; height:auto !important; max-height:none !important; object-fit:contain !important; object-position:center !important; aspect-ratio:auto !important; clip-path:none !important;}
 </style>
+<style>
+/* Figure 6: centered, legible, and no oversized stretching */
+.crtd-results-figure.crtd-figure6-compact{max-width:760px;width:100%;box-sizing:border-box;margin:16px auto 22px;overflow:visible;}
+.crtd-results-figure.crtd-figure6-compact img{display:block;width:100%;max-width:100%;height:auto;max-height:none;object-fit:contain;}
+</style>
+<link rel="stylesheet" href="retina-design-sync.css">
 </head>
 <body><script src="shared-header.js"></script>
 <main class="desktop">

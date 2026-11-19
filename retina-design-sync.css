@@ -1,0 +1,11 @@
+/* Retina portfolio: same visual language as anyrodrigues.bio; no typewriter header. */
+#global-site-header, #global-site-header * {font-family:Arial,Helvetica,sans-serif !important;}
+#global-site-header .universal-site-identity h1 {font-family:Arial,Helvetica,sans-serif !important;font-size:clamp(38px,5vw,48px) !important;font-weight:700 !important;letter-spacing:-2px !important;line-height:1.08 !important;}
+#global-site-header .universal-site-identity p {font-family:Arial,Helvetica,sans-serif !important;font-size:12px !important;letter-spacing:0 !important;}
+#global-site-header .universal-site-nav a {font-family:Arial,Helvetica,sans-serif !important;font-size:14px !important;font-weight:700 !important;}
+#global-site-header .universal-status {font-family:Arial,Helvetica,sans-serif !important;font-size:12px !important;}
+/* The retina archive keeps its Explorer toolbar but uses the same readable typography. */
+body .window-content,body .window-content p,body .window-content h1,body .window-content h2,body .window-content h3,body .window-content a,body .document,body .document p,body .document h1,body .document h2,body .document h3 {font-family:Arial,Helvetica,sans-serif !important;}
+body .window-content h1,body .document h1 {letter-spacing:-.6px !important;}
+/* Keep real code/path strings monospaced, not page-wide headings. */
+body code,body pre,body kbd,body samp {font-family:'Courier New',monospace !important;}
